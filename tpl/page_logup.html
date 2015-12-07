@@ -1,0 +1,52 @@
+<div class="login bg-black" ng-controller="SigninFormController">
+
+    <div class="row bgh">
+        <img src="img/icon/ytc-logo.png" alt=""/>
+    </div>
+
+    <div class="container">
+        <div class="row m-t-xxl">
+            <div class="col-md-8 col-sm-12 text-center m-t-xl">
+                <img src="img/screen.png" alt=""/>
+            </div>
+
+            <div class="col-md-4 col-sm-12 text-center b-a">
+                <div class="m-b-lg">
+                    <div class="wrapper text-center text-2x">
+                        <strong>注册</strong>
+                    </div>
+                    <form name="form" class="form-validation">
+                        <div class="text-danger wrapper text-center" ng-show="authError">
+                            {{authError}}
+                        </div>
+                        <div class="list-group list-group-sm">
+                            <div class="list-group-item">
+                                <input placeholder="账号" class="form-control no-border" ng-model="user.name" required>
+                            </div>
+                            <div class="list-group-item">
+                                <input type="email" placeholder="邮箱" class="form-control no-border" ng-model="user.email" required>
+                            </div>
+                            <div class="list-group-item">
+                                <input type="password" placeholder="密码" class="form-control no-border" ng-model="user.password" required>
+                            </div>
+                        </div>
+                        <div class="checkbox m-b-md m-t-none">
+                            <label class="i-checks">
+                                <input type="checkbox" ng-model="agree" required><i></i> 同意 <a href>条款和政策</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="signup()" ng-disabled='form.$invalid'>注 册</button>
+                        <div class="line line-dashed"></div>
+                        <p class="text-center"><small>已经有账号</small></p>
+                        <a ui-sref="login" class="btn btn-lg btn-default btn-block">登 陆</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text-center m-t-sm" ng-include="'tpl/blocks/page_footer.html'"></div>
+    </div>
+</div>

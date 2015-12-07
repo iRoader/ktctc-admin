@@ -1,0 +1,31 @@
+.w-xxl{
+    background: #cccccc;
+}
+
+
+.login .m-t-xxl{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.login{
+
+}
+.bgh{
+    background-color: #999999;
+    height: 50px;
+}
+.bgl{
+    text-align: center;
+}
+.bgr{
+    background-color: #ff8677;
+    /*height: 100px;*/
+}
+.navbar-brand{
+    font-size: 18px !important;
+}
+
+/* 悦停车图标 */
+.navbar-brand img{
+    max-height: 24px !important;
+}

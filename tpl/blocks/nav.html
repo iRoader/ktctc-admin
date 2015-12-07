@@ -1,0 +1,291 @@
+<!-- first -->
+<ul class="nav">
+    <!-- 导航部分 -->
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate="aside.nav.HEADER">导航</span>
+    </li>
+    <li>
+        <a ui-sref="app.dashboard">
+            <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+            <span class="font-bold" translate="aside.nav.DASHBOARD">仪表盘</span>
+        </a>
+    </li>
+
+    <li ui-sref-active="active">
+        <a ui-sref="app.mail.list">
+            <b class="badge bg-info pull-right">9</b>
+            <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+            <span class="font-bold" translate="aside.nav.EMAIL">电子邮件</span>
+        </a>
+    </li>
+
+    <li class="line dk"></li>
+
+    <!-- 组件部分 -->
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate="">实时监控</span>
+    </li>
+    <li ng-class="{active:$state.includes('app.layout')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+            </span>
+            <!--<b class="badge bg-info pull-right">3</b>-->
+            <i class="glyphicon glyphicon-th"></i>
+            <span>实时监控</span>
+        </a>
+
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href="">
+                    <span>实时监控</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span>地图模式</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span>车位模式</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span>人员监控</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- 警告 -->
+    <li ng-class="{active:$state.includes('app.ui')}">
+        <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-briefcase icon"></i>
+            <span translate="">警告</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="">警告</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">警告设置</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <b class="badge bg-info pull-right">3</b>
+                    <span translate="">设备警告</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">车位警告</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <b class="badge bg-primary pull-right">16</b>
+                    <span translate="">历史警告</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- -->
+    <li ng-class="{active:$state.includes('app.table')}">
+        <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <b class="label bg-primary pull-right">2</b>
+            <i class="glyphicon glyphicon-list"></i>
+            <span translate="">运营管理</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="">运营管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">停车记录</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">收款记录</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">逃逸记录</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">巡检记录</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">对账单</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">收费规则</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">收费规则应用</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">黑名单规则设置</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">黑名单查询</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">红名单管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">交接班记录</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- 设备管理 -->
+    <li ng-class="{active:$state.includes('app.form')}">
+        <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-edit"></i>
+            <span translate="">设备管理</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="">设备管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">停车点管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">停车位管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">设备状态监控</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">POS 机信息</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- 任务管理 -->
+    <li ng-class="{active:$state.includes('app.page')}">
+        <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-file icon"></i>
+            <span translate="">任务管理</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="">任务管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate=""></span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li ng-class="{active:$state.includes('app.page')}">
+        <a href class="auto">
+      <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-file icon"></i>
+            <span translate="">报表管理</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="">报表管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">报表管理</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="">
+                    <span translate="">实时车位</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+
+    <!-- 分割线 -->
+    <li class="line dk hidden-folded"></li>
+
+    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
+    </li>
+    <li>
+        <a ui-sref="app.page.profile">
+            <i class="icon-user icon text-success-lter"></i>
+            <b class="badge bg-success dk pull-right">30%</b>
+            <span translate="aside.nav.your_stuff.PROFILE">Profile</span>
+        </a>
+    </li>
+    <li>
+        <a ui-sref="app.docs">
+            <i class="icon-question icon"></i>
+            <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
+        </a>
+    </li>
+</ul>
+<!-- / third -->
